@@ -237,25 +237,23 @@
             </div>
             <div class="row">
                 <div class="text-center"> 
-                    <img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=Detroit,+MI&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true" alt="Google Map of Detroit, MI">
-<div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyUnfuSJzBN3AOnR2UI0GUte8dqex5GMA&callback=initMap">
-    </script>
-
+                <div id="map" style="height:400px; width:100%"></div>
+                    <script>
+                      function initMap() {
+                        var detroit = {lat: 42.3314, lng: -83.0458};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 13,
+                          center:detroit
+                        });
+                        var marker = new google.maps.Marker({
+                          position: detroit,
+                          map: map
+                        });
+                      }
+                    </script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsDwTF6ybtegBfFZGhuyMTwdvYfefLY6M&callback=initMap">
+                    </script>
                 </div>
             </div>
         </div>
